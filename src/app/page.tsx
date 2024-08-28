@@ -89,6 +89,10 @@ export default function RegisterForm() {
       valid = false;
       setPlanError(true);
     }
+    if(gender === ""){
+      valid = false;
+      setGenderError(true);
+    }
 
     if (valid) {
       alert(
@@ -153,7 +157,7 @@ export default function RegisterForm() {
             checked={gender === "female"}
           />
           Female 👩
-          {!genderError && <div className="text-danger">Please select gender</div> }
+          {genderError && <div className="text-danger">Please select gender</div> }
         </div>
       </div>
 
