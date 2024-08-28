@@ -34,12 +34,12 @@ export default function RegisterForm() {
 
   const radioGenderMaleOnChange = () => {
     setGender("male");
-    setGenderError(true);
+    setGenderError(false);
   };
 
   const radioGenderFemaleOnChange = () => {
     setGender("female");
-    setGenderError(true);
+    setGenderError(false);
   };
 
   const cbBuyBottleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
